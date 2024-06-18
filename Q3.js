@@ -15,13 +15,12 @@ function checkDuplicates(classes) {
         for (let j = 0; j < classes[i].length; j++) {
             let name = classes[i][j];
             if (nameSet.has(name)) {
-                return true; // Duplicate found
+                return true; 
             }
             nameSet.add(name);
         }
     }
-
-    return false; // No duplicates found
+    return false;
 }
 
 console.log(checkDuplicates(classes)); // Output: true
